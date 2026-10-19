@@ -5,3 +5,4 @@
 *.obj
 *.exe
 .DS_Store
+/CMakeFiles/
