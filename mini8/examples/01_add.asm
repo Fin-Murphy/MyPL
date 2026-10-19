@@ -1,6 +1,0 @@
-; 3 + 4 = 7
-LDI R0, 3
-LDI R1, 4
-ADD R0, R1
-OUT R0
-HALT
