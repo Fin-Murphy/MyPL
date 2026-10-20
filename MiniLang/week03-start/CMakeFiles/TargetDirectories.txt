@@ -1,0 +1,4 @@
+/Users/fin/IPL/MiniLang/week03-start/CMakeFiles/mini_compiler.dir
+/Users/fin/IPL/MiniLang/week03-start/CMakeFiles/minic.dir
+/Users/fin/IPL/MiniLang/week03-start/CMakeFiles/edit_cache.dir
+/Users/fin/IPL/MiniLang/week03-start/CMakeFiles/rebuild_cache.dir
