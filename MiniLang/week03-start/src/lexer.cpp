@@ -14,6 +14,7 @@
 #include <sstream>
 #include <string_view>
 #include <utility>
+#include <iostream>
 
 namespace mini {
 namespace {
@@ -178,8 +179,17 @@ private:
 
   void identifier() {
     // TODO WEEK03: read the entire name, classify it, then add its token.
-    throw CompileError(Phase::Lex, source_.name(), source_.span(start_, 1),
-                       "TODO WEEK03: implement identifier scanning");
+    // throw CompileError(Phase::Lex, source_.name(), source_.span(start_, 1),
+    //                    "TODO WEEK03: implement identifier scanning");
+
+    while(isAsciiAlphaNumeric(peek())){
+      advance();
+    }
+
+    const std::string text(contents_.substr(start_, current_ - start_));
+
+    TokenKind tk = identifierKind(text);
+    addToken(tk, text); 
   }
 
   void number() {
